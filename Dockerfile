@@ -1,6 +1,7 @@
 # 多阶段构建 - 构建阶段
-ARG TARGETPLATFORM=linux/amd64
-FROM --platform=${TARGETPLATFORM} node:18-alpine AS builder
+#ARG TARGETPLATFORM=linux/amd64
+#FROM --platform=${TARGETPLATFORM} node:18-alpine AS builder
+FROM node:18-alpine AS builder
 
 # 设置工作目录
 WORKDIR /app
